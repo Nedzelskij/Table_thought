@@ -1,0 +1,41 @@
+.comments {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comments input {
+    display: block;
+    margin: 1rem 0;
+    padding: 10px 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+.comments__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.comments__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.item {
+    padding: 0 5px;
+}
+
+.item__username {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.item__content {
+
+}

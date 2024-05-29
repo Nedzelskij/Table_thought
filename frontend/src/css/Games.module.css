@@ -1,0 +1,236 @@
+/* Вітрина */
+/*.banner {*/
+/*    padding-top: 70px;*/
+/*}*/
+
+#showcase{
+    height: 430px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: small;
+}
+
+.btn-primary {
+    color: #fff;
+    background: black;
+}
+
+.btn-primary:hover {
+    background: #117964;
+    transition: background 0.3s ease-in-out;
+}
+
+/*.showcase-area {*/
+/*    height: 50vh;*/
+/*    background: linear-gradient(rgba(240, 240, 240, 0.144),*/
+/*    rgba(255, 255, 255, 0.336)),*/
+/*    url("../images/fones/header_board_games.jpg");*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+    row-gap: 20px;
+}
+
+.main-title {
+    text-transform: uppercase;
+    /*margin-top: 1.5em;*/
+    font-size: 4rem;
+    color: chocolate;
+}
+
+.showcase-container p{
+    color: black;
+}
+
+.games-header {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #FF9800;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.games-header h2 {
+    text-align: center;
+    font-size: 3.4rem;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+/* Магазини */
+#stores {
+    padding: 2rem 0 10rem 0;
+}
+
+.games-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.games-container img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+
+.img-container {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.img-content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.img-content h3 {
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.img-content a {
+    font-size: 1.2rem;
+}
+
+.img-container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.871);
+    opacity: 0;
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover::after {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.img-container:hover .img-content {
+    opacity: 1;
+    top: 40%;
+}
+
+.games-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0 30px 0;
+}
+
+.games-menu-container img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.games-menu-container img:hover {
+    transform: scale(1.05);
+}
+
+.games-menu-item {
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.games-description {
+    margin: auto 1.5rem;
+}
+
+.games-description p {
+    font-size: 1.4rem;
+    color: #176302;
+    font-weight: 600;
+}
+
+.games-description a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.games-description a:hover {
+    color: #a19a0e;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Поле введення */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#game-search {
+    width: 300px;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #176302;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#game-search:focus {
+    border-color: #176302;
+    box-shadow: 0 0 10px rgba(23, 99, 2, 0.5);
+}
+
+.search-container button:hover {
+    background-color: #a19a0e;
+    transform: scale(1.05);
+}

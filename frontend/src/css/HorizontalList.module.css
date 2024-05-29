@@ -1,0 +1,103 @@
+.games-list {
+    position: relative;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px 0 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.game-item {
+    flex: 0 0 auto;
+    width: 220px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.game-item img {
+    width: 220px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.game-item img:hover {
+    transform: scale(1.05);
+}
+
+.game-item p {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.game-item p:hover {
+    color: #a19a0e;
+    transition: color 0.3s ease-in-out;
+}
+
+.game-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Кнопки прокручування */
+.games-list {
+    position: relative;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-button:hover {
+    background-color: #d9d06a;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.left-button {
+    left: 10px;
+}
+
+.right-button {
+    right: 10px;
+}

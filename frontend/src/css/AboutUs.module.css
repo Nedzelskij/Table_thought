@@ -1,0 +1,70 @@
+#showcase{
+    height: 500px;
+}
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+    row-gap: 20px;
+}
+
+.main-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: chocolate;
+}
+
+/* Загальна інформація */
+.about-site p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.animated-image,
+.about-site,
+.developer-info {
+    background: #f97676;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.animated-image h2,
+.about-site h2,
+.developer-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.developer-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.developer-info th,
+.developer-info td {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.developer-info th {
+    background-color: #9b2727;
+    font-weight: bold;
+}
+
+.animated-image img {
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}

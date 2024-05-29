@@ -1,0 +1,72 @@
+#showcase {
+    height: 430px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: small;
+}
+
+.btn-primary {
+    color: #fff;
+    background: black;
+}
+
+.btn-primary:hover {
+    background: #117964;
+    transition: background 0.3s ease-in-out;
+}
+
+/*.showcase-area {*/
+/*    height: 50vh;*/
+/*    background: linear-gradient(rgba(240, 240, 240, 0.144),*/
+/*    rgba(255, 255, 255, 0.336)),*/
+/*    url("../images/fones/header_menu.jpg");*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+    row-gap: 20px;
+}
+
+.main-title {
+    text-transform: uppercase;
+    /*margin-top: 1.5em;*/
+    font-size: 4rem;
+    color: chocolate;
+}
+
+.showcase-container p{
+    color: black;
+}
+
+.games-header {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #FF9800;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.games-header h3 {
+    font-size: 1.5em;
+    color: #FFF;
+    font-weight: bold;
+}
